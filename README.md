@@ -23,9 +23,9 @@ A synthetic black-box system is simulated:
 
 **Inputs (tunable parameters):**
 
-- x1 — System parameter 1  
-- x2 — System parameter 2  
-- x3 — System parameter 3  
+- x1 - System parameter 1  
+- x2 - System parameter 2  
+- x3 - System parameter 3  
 
 **Output (objective):**
 
