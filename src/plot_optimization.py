@@ -14,9 +14,7 @@ y = df["runtime"]
 model = RandomForestRegressor(n_estimators=200)
 model.fit(X, y)
 
-# -----------------------------
 # Baseline Random Search
-# -----------------------------
 baseline_best = []
 best = float("inf")
 
@@ -26,9 +24,7 @@ for _ in range(200):
     best = min(best, true_y)
     baseline_best.append(best)
 
-# -----------------------------
 # Surrogate-Guided Search
-# -----------------------------
 surrogate_best = []
 best = float("inf")
 
@@ -42,9 +38,7 @@ for _ in range(200):
     
     surrogate_best.append(best)
 
-# -----------------------------
 # Plot
-# -----------------------------
 plt.plot(baseline_best, label="Baseline Random Search")
 plt.plot(surrogate_best, label="Surrogate-Guided Search")
 
