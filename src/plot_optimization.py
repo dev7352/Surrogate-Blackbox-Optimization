@@ -53,4 +53,6 @@ plt.ylabel("Best Runtime Found")
 plt.title("Optimization Behaviour Comparison")
 
 plt.legend()
-plt.show()
+plt.savefig("../results/plots/optimization_comparison.png", dpi=300, bbox_inches="tight")
+plt.close()
+

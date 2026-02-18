@@ -18,4 +18,6 @@ plt.xlabel("True Runtime")
 plt.ylabel("Predicted Runtime")
 plt.title("Surrogate Model Predictions vs True Runtime")
 plt.plot([y.min(), y.max()], [y.min(), y.max()])
-plt.show()
+plt.savefig("../results/plots/surrogate_predictions.png", dpi=300,bbox_inches="tight")
+plt.close()
+
